@@ -3,17 +3,13 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-    System.out.println("This is main result = " + areEqualByThreeDecimalPlaces(155.15122, 155.15522));
+
     }
 
     public static boolean areEqualByThreeDecimalPlaces (double x, double y) {
-//        double test1 = y * 1000;
-//        int test2 = (int) (x * 1000);
-//        System.out.println("This is x = " + test2 + " and this is y = " + test1);
+        int calcX = (int) (x * 1000); // Moving three numbers past the decimal to the right, then cutting off with int cast
+        int calcY = (int) (y * 1000); // Same thing happening here as in line 10
 
-        if ((int) x * 1000 == (int) y * 1000 && x == y) {
-            return true;
-        }
-        return false;
+        return calcX == calcY; // Testing if calcX and calcY are equal if so true, otherwise false
     }
 }
