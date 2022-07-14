@@ -6,8 +6,8 @@ public class Main {
 
   public static void main(String[] args) {
     // Hello World - Lord.
-    System.out.println(getDurationString(51, 54));
   }
+
   // Method for converting minutes to hours, and printing results including left over minutes.
   private static String getDurationString(long minutes, long seconds) {
     if ((minutes < 0) || (seconds < 0) || (seconds > 59)) {
@@ -40,7 +40,8 @@ public class Main {
 
     return hoursString + minutesString + secondsString;
   }
-
+  // Method for converting 'seconds' values over 60 to minutes,
+  // then returning 'minutes' and 'remainingSeconds' to overloaded method getDurationString(X,X)
   private static String getDurationString(long seconds) {
     if (seconds <= 0) {
       return INVALID_VALUE_MESSAGE;
