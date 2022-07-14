@@ -20,19 +20,19 @@ public class Main {
     // Finding remaining minutes after conversion via long 'remainingMinutes'
     long remainingMinutes = minutes % 60;
 
-    //Prepending a '0' before 'hours' value, and appending "h"
+    // Prepending a '0' before 'hours' value, and appending "h"
     String hoursString = hours + "h ";
     if (hours < 10) {
       hoursString = "O" + hoursString;
     }
 
-    //Prepending a '0' before 'minutes' value, and appending "m"
+    // Prepending a '0' before 'minutes' value, and appending "m"
     String minutesString = remainingMinutes + "m ";
     if (remainingMinutes < 10) {
       minutesString = "O" + minutesString;
     }
 
-    //Prepending a '0' before 'seconds' value, and appending "s"
+    // Prepending a '0' before 'seconds' value, and appending "s"
     String secondsString = seconds + "s";
     if (seconds < 10) {
       secondsString = "O" + secondsString;
