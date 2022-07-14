@@ -32,7 +32,7 @@ public class Main {
       minutesString = "O" + minutesString;
     }
 
-    //Appending a '0' before 'seconds' value, and appending "s"
+    //Prepending a '0' before 'seconds' value, and appending "s"
     String secondsString = seconds + "s";
     if (seconds < 10) {
       secondsString = "O" + secondsString;
