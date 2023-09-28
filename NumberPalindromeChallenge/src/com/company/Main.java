@@ -7,7 +7,7 @@ public class Main {
     }
 
     public static boolean isPalindrome (int number) {
-        int reverse = 0; // Setting a value for the reverse number
+        int reverse = 0;
         int dummyDigit = Math.abs(number); // Creating a value for while loop, forcing the numbers value to be positive
         while (dummyDigit > 0) {
             int lastDigit = dummyDigit % 10; // Creating lastDigit value, then taking dummyDigit and extracting it's last number
